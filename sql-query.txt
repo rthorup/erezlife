@@ -1,0 +1,5 @@
+SELECT s.id, s.name, COUNT(a.id) AS #ofApps
+FROM student s
+JOIN application a 
+ON s.id = a.id
+ORDER BY COUNT(a.id), s.name
